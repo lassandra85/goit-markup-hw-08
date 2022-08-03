@@ -1,0 +1,50 @@
+.socials-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+
+    transition: color var(--trans-fast), background-color var(--trans-fast);
+
+    &:hover,
+    &:focus {
+        color: var(--white);
+        background-color: var(--accent-txt-cl);
+    }
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+}
+
+
+.card-set__socials {
+    margin-bottom: 30px;
+}
+
+
+.socials__item {
+    &:not(:last-child) {
+        margin-right: 10px;
+    }
+}
+
+
+.socials-link--dark {
+    color: var(--social);
+    background-color: var(--white);
+}
+
+.socials-link--light {
+    color: var(--white);
+    background-color: var(--bg-social-footer);
+}
+  
+
+.socials__icon {
+    fill: currentColor;
+}
