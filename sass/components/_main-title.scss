@@ -1,0 +1,9 @@
+.main-title {
+    @include fonts(900, 44px, 60px, 0.06em);
+   
+    text-align: center;
+    text-transform: uppercase;
+    width: 696px;
+
+    color: var(--white);
+}

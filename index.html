@@ -21,11 +21,20 @@
 
 <body data-body>
 
-  <header class="header" data-header>
+  <!--  <header class="header" data-header>
 
     <div class="container header__container">
 
       <a class="header__logo logo link" href="#" lang="en">Web<span class="header__logo--accent">Studio</span></a>
+
+      <button class="burger-btn" type="button" data-menu-open>
+
+        <svg width="40" height="40">
+
+          <use href="./images/icons.svg#icon-menu"></use>
+
+        </svg>
+      </button>
 
       <nav class="nav">
 
@@ -77,11 +86,11 @@
         </ul>
       </div>
     </div>
-  </header>
+  </header> -->
 
   <main class="main">
 
-    <section class="order">
+    <!-- <section class="order">
 
       <div class=" order__container container ">
 
@@ -96,11 +105,11 @@
           </span>
         </button>
       </div>
-    </section>
+    </section> -->
 
-    <section class="advantage section">
+    <section class="advantage">
 
-      <div class="container">
+      <div class=" container advantage-container">
 
         <h2 hidden>Сильные стороны</h2>
 
@@ -169,7 +178,7 @@
       </div>
     </section>
 
-    <section class="about section">
+    <!-- <section class="about">
       <div class="container">
         <h2 class="about__title title">Чем мы занимаемся</h2>
 
@@ -194,17 +203,18 @@
       </div>
     </section>
 
-    <section class="team section">
+    <section class="team">
       <div class="container">
         <h2 class="team__title title">Наша команда</h2>
 
         <ul class="team__list list card-set">
           <li class="team__item card-set__item">
-            <img class="team__img" src="./images/ylibvo4kax.jpg" alt="парень улыбается в очках" width="270" />
+            <img class="team__img" srcset="./images\tems\ylibvo4kax@1x_sm.jpg 1x, ./images\tems\ylibvo4kax@2x_sm.jpg 2x"
+              src="./images\tems\ylibvo4kax@1x_sm.jpg" alt="парень улыбается в очках" width="450" />
             <h3 class="team__subtitle subtitle">Игорь Демьяненко</h3>
             <p class="team__position">Product Designer</p>
 
-            <ul class="socials card-set__socials list">
+            <ul class="socials team__socials list">
 
               <li class="socials__item">
                 <a class="socials-link socials-link--dark link" href="" target="_blank" rel="noopener noreferrer"
@@ -249,7 +259,7 @@
             <h3 class="team__subtitle subtitle">Ольга Репина</h3>
             <p class="team__position">Frontend Developer</p>
 
-            <ul class="socials card-set__socials list">
+            <ul class="socials team__socials list">
 
               <li class="socials__item">
                 <a class="socials-link socials-link--dark link" href="" target="_blank" rel="noopener noreferrer"
@@ -295,7 +305,7 @@
             <h3 class="team__subtitle subtitle">Николай Тарасов</h3>
             <p class="team__position">Marketing</p>
 
-            <ul class="socials card-set__socials list">
+            <ul class="socials team__socials list">
 
               <li class="socials__item">
                 <a class="socials-link socials-link--dark link" href="" target="_blank" rel="noopener noreferrer"
@@ -340,7 +350,7 @@
             <h3 class="team__subtitle subtitle">Михаил Ермаков</h3>
             <p class="team__position">UI Designer</p>
 
-            <ul class="socials card-set__socials list">
+            <ul class="socials team__socials list">
 
               <li class="socials__item">
                 <a class="socials-link socials-link--dark link" href="" target="_blank" rel="noopener noreferrer"
@@ -382,8 +392,8 @@
         </ul>
       </div>
     </section>
-
-    <section class="clients section">
+ -->
+    <!--  <section class="clients">
       <div class="container">
 
         <h2 class="clients__title title">Постоянные клиенты</h2>
@@ -440,42 +450,45 @@
 
     <div class="footer__container container">
 
-      <div class="contact">
+      <div class="footer-contact">
 
-        <a class="contact__logo logo link" href="#" lang="en">Web<span class="contact__logo--accent">Studio</span></a>
+        <a class="footer__logo logo link" href="#" lang="en">Web<span class="footer__logo--accent">Studio</span></a>
 
-        <ul class="contact__list list">
+        <ul class="footer__list list">
 
-          <li class="contact__item">
+          <li class="footer__item">
 
-            <a class="contact__link contact__link--adress link"
+            <a class="footer__item footer__item--adress link"
               href="https://www.google.com/maps/place/Lesi+Ukrainky+St,+26,+Kyiv,+Ucraina,+02000/@50.5190802,30.4363249,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4d29b9e369069:0xff64663a5fd75cd5!8m2!3d50.5190802!4d30.4385136"
               target="_blank" rel="noopener noreferrer">г. Киев, пр-т Леси Украинки, 26
             </a>
           </li>
 
-          <li class="contact__item">
-            <a class="contact__link contact__link--contact link" href="mailto:info@example.com">info@example.com</a>
+          <li class="footer__item">
+            <a class="footer__item footer__item--connection link" href="mailto:info@example.com">info@example.com</a>
           </li>
 
-          <li class="contact__item">
-            <a class="contact__link contact__link--contact link" href="tel:+380991111111">+38 099 111 11 11</a>
+          <li class="footer__item">
+            <a class="footer__item footer__item--connection link" href="tel:+380991111111">+38 099 111 11 11</a>
           </li>
         </ul>
       </div>
 
-      <div class="contact footer__contact">
+      <div class="footer__socials footer-contact">
 
-        <strong class="contact__text">присоединяйтесь</strong>
+        <strong class="footer__text">присоединяйтесь</strong>
 
-        <ul class="socials contact__list list">
+        <ul class="socials footer__list list">
 
           <li class="socials__item">
 
             <a class="socials-link socials-link--light link" href="" target="_blank" rel="noopener noreferrer"
               aria-label="instagram">
+
               <svg class="socials__icon icon" width="20" height="20">
+
                 <use href="./images/icons.svg#icon-instagram"></use>
+
               </svg>
             </a>
           </li>
@@ -484,8 +497,11 @@
 
             <a class="socials-link socials-link--light link" href="" target="_blank" rel="noopener noreferrer"
               aria-label="twitter">
+
               <svg class="socials__icon icon" width="20" height="20">
+
                 <use href="./images/icons.svg#icon-twitter"></use>
+
               </svg>
             </a>
           </li>
@@ -494,8 +510,11 @@
 
             <a class="socials-link socials-link--light link" href="" target="_blank" rel="noopener noreferrer"
               aria-label="facebook">
+
               <svg class="socials__icon icon" width="20" height="20">
+
                 <use href="./images/icons.svg#icon-facebook"></use>
+
               </svg>
             </a>
           </li>
@@ -504,21 +523,24 @@
 
             <a class="socials-link socials-link--light link" href="" target="_blank" rel="noopener noreferrer"
               aria-label="linkedin">
+
               <svg class="socials__icon icon" width="20" height="20">
+
                 <use href="./images/icons.svg#icon-linkedin"></use>
+
               </svg>
             </a>
           </li>
         </ul>
       </div>
 
-      <div class="contact footer__form">
+      <div class="footer__form footer-contact">
 
-        <strong class="contact__text">Подпишитесь на рассылку</strong>
+        <strong class="footer__text">Подпишитесь на рассылку</strong>
 
         <form class="footer__subscribe subscribe" name="subscribe" autocomplete="on" novalidate>
 
-          <div class="subscribe__wrapper contact__list">
+          <div class="subscribe__wrapper footer__list">
 
             <label class="subscribe__label">
 
@@ -533,17 +555,19 @@
               </span>
 
               <svg class="subscribe__icon icon" width="24" height="24">
+
                 <use href="./images/icons.svg#icon-send"></use>
+
               </svg>
             </button>
           </div>
         </form>
       </div>
     </div>
-  </footer>
+  </footer> -->
 
 
-  <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
 
     <div class="modal">
 
@@ -605,13 +629,13 @@
 
           <span class="textarea__name">Комментарий</span>
 
-          <textarea class="textarea__space" name="comments" rows="7" placeholder="Введите текст"></textarea>
+          <textarea class="textarea__space" name="comments" rows="6" placeholder="Введите текст"></textarea>
 
         </label>
 
         <label class="form__check check">
 
-          <input type="checkbox" class="visufiltery-hidden  check__input" name="user_agreement" checked>
+          <input type="checkbox" class="visually-hidden  check__input" name="user_agreement" checked>
 
           <span class="check__custom">
 
@@ -645,9 +669,80 @@
     </div>
   </div>
 
+  <div class="menu-overlay" data-menu>
 
-  <script src="./js/modal.js"></script>
+    <div class="menu__container container">
 
+      <button class="menu__close-btn close-btn" type="button" data-menu-close>
+
+        <svg class="menu-close icon" width="40" height="40">
+          <use href="./images/icons.svg#menu-close"></use>
+        </svg>
+
+      </button>
+
+      <ul class="menu__list list">
+
+        <li class="menu__item">
+
+          <a class="menu__link menu__link--current link" href="./index.html">Студия</a>
+
+        </li>
+        <li class="menu__item">
+
+          <a class="menu__link link" href="./portfolio.html">Портфолио</a>
+
+        </li>
+        <li class="menu__item">
+
+          <a class="menu__link link" href="">Контакты</a>
+
+        </li>
+      </ul>
+
+      <ul class="menu__list list">
+        <li>
+
+        </li>
+
+        <li>
+
+        </li>
+      </ul>
+
+      <ul class="menu-socials list">
+
+        <li class="menu-socials__item">
+          <a class="menu-socials__link link" href="" target="_blank" rel="noopener noreferrer" aria-label="instagram">
+            Instagram
+          </a>
+        </li>
+
+        <li class="menu-socials__item">
+          <a class=" menu-socials__link link" href="" target="_blank" rel="noopener noreferrer" aria-label="twitter">
+            Twitter
+          </a>
+        </li>
+
+        <li class="menu-socials__item">
+          <a class="menu-socials__link link" href="" target="_blank" rel="noopener noreferrer" aria-label="facebook">
+            Facebook
+          </a>
+        </li>
+
+        <li class="menu-socials__item">
+          <a class="menu-socials__link link" href="" target="_blank" rel="noopener noreferrer" aria-label="linkedin">
+            Linkedin
+          </a>
+        </li>
+      </ul>
+
+    </div>
+  </div> -->
+
+
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 
 </body>
 
