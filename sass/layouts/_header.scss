@@ -2,17 +2,24 @@
     border-bottom: 1px solid var(--border-header);
 }
 
+
 .header__container {
     display: flex;
     align-items: center;
 }
 
 
-
 .header__logo {
-    margin-right: 93px;
+    margin-right: auto;
+    
+    @media screen and (min-width: 768px) {
+        margin-right: 88px;
+    }
+    
+    @media screen and (min-width: 1200px) {
+        margin-right: 93px;
+    }
 }
-
 
 
 .header__logo--accent {
@@ -20,49 +27,69 @@
 }
 
 
+.header__burger-btn {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
 .header__contact {
-    display: none;
+    display: flex;
     margin-left: auto;
+    
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+
 }
 
 
 .header__list {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    gap: 10px;
 
-    @media screen and (max-width: 767px) {
-        display: none;
+    padding-top: 21px;
+    padding-bottom: 21px;
+
+    @media screen and (min-width: 1200px) {
+        flex-direction: row;
+        gap: 30px;
+
+        padding-top: 32px;
+        padding-bottom: 32px;
     }
 }
 
 
-.header__item:not(:last-child) {
-    margin-right: 50px;
-}
-
 .header__link {
     display: flex;
     align-items: center;
-
-    padding-top: 32px;
-    padding-bottom: 32px;
-
-    @include fonts(500, 14px, 16px, 0.02em);
    
     color: var(--main-cl);
-
+    
     transition: color var(--trans-fast);
-}
 
+    &:hover,
+    &:focus {
+        color: var(--accent-txt-cl);
+    }
 
-.header__link:hover,
-.header__link:focus {
-    color: var(--accent-txt-cl);
+    @include fonts(500, 12px, 14px, 0.02em);
+
+    @media screen and (min-width: 1200px) {
+        @include fonts(500, 14px, 16px, 0.02em);
+    }
 }
 
 
 .header__icon {
     fill: currentColor;
 
-    margin-right: 10px;
+    margin-right: 8px;
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 10px;
+    }
 }

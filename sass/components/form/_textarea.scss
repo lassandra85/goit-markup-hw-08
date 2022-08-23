@@ -1,6 +1,7 @@
 .textarea {
     display: flex;
     flex-direction: column;
+
 }
 
 
@@ -32,6 +33,7 @@
     &:focus::placeholder {
         opacity: 0;
     }
+
 }
 
 

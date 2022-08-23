@@ -3,10 +3,24 @@
 }
 
 
+.portfolio__card-set{
+
+    --items: 1;
+    
+    @media screen and (min-width: 768px) {
+        --items: 2;
+    }
+    
+    @media screen and (min-width: 1200px) {
+        --items: 3;
+    }
+}
+
+
 .portfolio__item {
     display: flex;
     flex-direction: column;
-    background-color: var(--white);
+    background-color: var(--white); 
 }
 
 
@@ -14,6 +28,8 @@
     display: flex;
     flex-direction: column;
     text-decoration: none;
+    width: 100%;
+    height: 100%;
 
     transition: box-shadow var(--trans-fast);
 
@@ -27,6 +43,7 @@
     position: relative;
     display: flex;
     overflow: hidden;
+     
 }
 
 
@@ -39,10 +56,14 @@
 
 .portfolio__example {
     border: 1px solid var(--border-example);
-    border-top: inherit;
     padding: 20px 24px;
 }
 
+.var-tablet {
+    @media screen and (min-width: 768px) and (max-width: 1199px)  {
+        padding: 20px 24px 56px 24px;
+    }
+}
 
 .portfolio__title {
     @include fonts(700, 18px, 36px,0.06em);

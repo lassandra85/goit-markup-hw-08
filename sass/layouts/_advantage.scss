@@ -3,13 +3,6 @@
 }
 
 
-.advantage-container{
-    @media screen and (min-width: 1200px) {
-        padding-left: 0px;
-        padding-right: 0px;
-    }  
-}
-
 .advantage__list {
     --items: 1;
 
@@ -20,10 +13,6 @@
     @media screen and (min-width: 1200px) {
         --items: 4;
     }
-}
-
-.advantage__item {
-    margin: calc(var(--indent) / 2);
 }
 
 
@@ -47,4 +36,12 @@
     color: var(--link-cl);
 
     margin-bottom: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (min-width: 768px) {
+        display: inline;
+    }
 }

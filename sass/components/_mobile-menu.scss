@@ -28,25 +28,10 @@
 }
 
 
-.burger-btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-
-    width: 40px;
-    height: 40px;
-
-    background-color: transparent;
-    border: none;
-
-    cursor: pointer;
-}
-
 .menu__container {
+    position: relative;
     display: flex;
     flex-direction: column;
-
-    border:1px solid red;
 
     max-width: 480px;
     height: 100%;
@@ -63,15 +48,16 @@
 }
 
 
-.menu__list:first-child {
-    margin-bottom: auto;
-}
+.menu__close-btn {
+    width: 40px;
+    height: 40px;
+    border: none;
 
+    position: absolute;
+    top: 10px;
+    right: 15px;
 
-.menu__link {
-    @include fonts(500, 14px, 16px, 0.02em);
-    
-    color: var(--link-cl);
+    cursor: pointer;
     
     transition: color var(--trans-fast);
     
@@ -81,8 +67,63 @@
     }
 }
 
+
+.menu__list{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    margin-bottom: auto;
+}
+
+
+.menu__link {
+    @include fonts(500, 40px, 47px, 0.02em);
+
+    color: var(--link-cl);
+
+    transition: color var(--trans-fast);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-txt-cl);
+    }
+}
+
+
 .menu__link--current {
     color: var(--accent-txt-cl);
+}
+
+
+.mobile-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    
+    margin-top: auto;
+}
+
+
+.menu__contact {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+
+.menu__tel {
+    @include fonts(500, 34px, 40px, 0.02em);
+
+    color: var(--accent-txt-cl);
+        
+}
+
+
+.menu__mail {
+    @include fonts(500, 24px, 28px, 0.02em);
+
+    color: var(--main-cl);
 }
 
 
@@ -90,6 +131,13 @@
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+}
+
+
+.menu-socials__link {
+    @include fonts(500, 18px, 22px, 0.02em);
+    
+    color: var(--accent-txt-cl);
 }
 
 
