@@ -141,13 +141,8 @@
 
 
 .footer__form {
-    
-    align-items: center;
-
-    @media screen and (max-width: 1199px) {
-        display: flex;
-        flex-direction: column;
-    }
+    display: flex;
+    flex-direction: column;
     
 }
 
