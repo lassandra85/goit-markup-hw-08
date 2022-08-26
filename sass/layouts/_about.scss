@@ -1,21 +1,33 @@
 .about {
-    @include section(0px, 60px);
-
+   
+    @media screen and (max-width: 1199px) {
+        display: none;
+    }
+    
     @media screen and (min-width: 1200px) {
         padding-top: 0px;
     }
 }
 
 
+.about__title {
+    margin-bottom: 50px;
+}
+
+
+.about__list {
+
+    @media screen and (min-width: 1200px) {
+        --items: 3;
+    }
+
+}
+
 
 .about__item {
     position: relative;
 }
 
-
-.about__title {
-    margin-bottom: 50px;
-}
 
 .about__descr {
     display: flex;
